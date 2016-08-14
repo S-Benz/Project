@@ -6,63 +6,65 @@
     <link rel="stylesheet" href="css/index.css"/>
 </head>
 <body>
-<header class="main-header" role="banner">
-    <ul class="social">
-        <li>
-            <a href="https://www.facebook.com" target="_blank"><img src="sources/img/fb.png" width="30" height="30"></a>
-        </li>
-    </ul>
-    <nav role="navigation">
-        <ul class="nav-main">
+<div class="page">
+    <header class="main-header" role="banner">
+        <ul class="social">
             <li>
-                <a href="home.php">Home</a>
-            </li>
-            <li>
-                <a>Dropdown</a>
-                <ul class="dropdown">
-                    <li>
-                        <a>Dropdown1</a>
-                    </li>
-                    <li>
-                        <a>Dropdown2</a>
-                    </li>
-                    <li>
-                        <a>Dropdown3</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a>About</a>
+                <a href="https://www.facebook.com" target="_blank"><img src="sources/img/fb.png" width="30" height="30"></a>
             </li>
         </ul>
-    </nav>
-</header>
-<div classs="container">
-    <main role="main">
-        <article>
-            <h1>Überschrift</h1>
-            <p>Das ist ein Test. Eine gaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaanz lange Zeile <sub>1</sub></p>
-            <p>Noch eine Zeile mit Absatz.</p>
-        </article>
-        <figure>
-            <img src="sources/img/baum.jpg" alt="Ein Baum"/>
-            <figcaption>Ein Baum</figcaption>
-        </figure>
+        <nav role="navigation">
+            <ul class="nav-main">
+                <li>
+                    <a href="home.php">Home</a>
+                </li>
+                <li>
+                    <a>Dropdown</a>
+                    <ul class="dropdown">
+                        <li>
+                            <a>Dropdown1</a>
+                        </li>
+                        <li>
+                            <a>Dropdown2</a>
+                        </li>
+                        <li>
+                            <a>Dropdown3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a>About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div classs="container clearfix">
+        <main role="main">
+            <article>
+                <h1>Überschrift</h1>
+                <p>Das ist ein Test. Eine gaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaanz lange Zeile <sub>1</sub></p>
+                <p>Noch eine Zeile mit Absatz.</p>
+            </article>
+            <figure>
+                <img src="sources/img/baum.jpg" alt="Ein Baum" class="resp-pic"/>
+                <figcaption>Ein Baum</figcaption>
+            </figure>
     <span>
         LOADING
         <progress value="0.4">Ladebalken</progress>
     </span>
-    </main>
-    <div class="sidebar">
-        <aside role="complementary">
-            <h1>Hinweise zur Überschrift und mehr</h1>
-            <p>Auffällig ist, dass das Wort ganz aus gaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaanz vielen a`s besteht.</p>
-            <p>Das ist ein sehr gewagtes Design.</p>
-        </aside>
+        </main>
+        <div class="sidebar">
+            <aside role="complementary">
+                <h1>Hinweise zur Überschrift und mehr</h1>
+                <p>Auffällig ist, dass das Wort ganz aus gaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaanz vielen a`s besteht.</p>
+                <p>Das ist ein sehr gewagtes Design.</p>
+            </aside>
+        </div>
     </div>
+    <footer class="footer">
+        <sup>1</sup>Geschrieben von mir
+    </footer>
 </div>
-<footer>
-    <sup>1</sup>Geschrieben von mir
-</footer>
 </body>
 </html>
