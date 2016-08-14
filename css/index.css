@@ -1,0 +1,95 @@
+﻿body {
+    background: #ffffff;
+    font-family: cursive;
+}
+
+p::first-letter {
+    color: blue;
+    font-size: 1.5em;
+}
+
+.container {
+
+}
+
+
+
+.main-header{
+    position: relative;
+}
+
+.main-header .social{
+    position: absolute;
+    top: -10px;
+    right: 10px;
+}
+
+.nav-main{
+    border-top: 5px solid #00bf00;
+    border-bottom: 1px solid #c8c8c8;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-main li{
+    display: inline-block;
+}
+
+.nav-main li:hover{
+    background-color: #00bf00;
+}
+
+.nav-main li:hover .dropdown{
+    display: block;
+}
+
+.nav-main li:first-child{
+    border-left: none;
+}
+
+.nav-main a{
+    color: #292929;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px;
+
+}
+
+.dropdown{
+    position: absolute;
+    width: 150px;
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown a{
+    color: #292929;
+    display: inline-block;
+    font-size: .8em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.dropdown li{
+    background-color: #00bf00;
+    display: block;
+}
+
+.dropdown li:hover{
+    background-color: #006000;
+}
+
+.sidebar{
+
+}
+
+.social li{
+    display: inline;
+}
