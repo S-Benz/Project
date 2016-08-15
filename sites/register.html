@@ -10,36 +10,90 @@
     <h1>Neuen Account erstellen</h1>
     <form method="post" action="home.php">
         <fieldset>
-            <h2>Konto</h2>
+            <h2>Account Daten</h2>
             <div class="fields">
                 <p class="row">
-                    <label for="first-name">Vorname:</label>
-                    <input type="text" id="first-name" name="first-name" class="field-large"/>
+                    <label for="user-name">Benutzername*:</label>
+                    <input type="text" required id="user-name" name="user-name" class="field-large" autofocus/>
                 </p>
                 <p class="row">
-                    <label for="last-name">Nachname:</label>
-                    <input type="text" id="last-name" name="last-name" class="field-large"/>
+                    <label for="email">Email-Adresse*:</label>
+                    <input type="email" required placeholder="example@test.de" id="email" name="email"
+                           class="field-large" pattern=".{3,12]@.{3,10}\..{2,4}"/>
                 </p>
                 <p class="row">
-                    <label for="email">Email-Adresse:</label>
-                    <input type="text" id="email" name="email" class="field-large"/>
+                    <label for="password">Passwort*:</label>
+                    <input type="password" required maxlength="15" id="password" name="password" class="field-medium"/>
                 </p>
                 <p class="row">
-                    <label for="password">Passwort:</label>
-                    <input type="text" id="password" name="password" class="field-large"/>
-                </p>
-                <p class="row">
-                    <label for="password-reenter">Passwort wiederholen:</label>
-                    <input type="text" id="password-reenter" name="password-reenter" class="field-large"/>
+                    <label for="password-reenter">Wdh. Passwort*:</label>
+                    <input type="password" required maxlength="15" id="password-reenter" name="password-reenter"
+                           class="field-medium"/>
                 </p>
             </div>
         </fieldset>
         <fieldset>
             <h2>Adresse</h2>
+            <div class="felds">
+                <p class="row">
+                    <label for="street">Straße:</label>
+                    <input type="text" id="street" name="street" class="field-large">
+                </p>
+                <p class="row">
+                    <label for="plz">PLZ:</label>
+                    <input type="text" id="plz" name="plz" class="field-small">
+                </p>
+                <p class="row">
+                    <label for="country">Land:</label>
+                    <select id="country" name="country">
+                        <option value="A">Afghanistan</option>
+                        <option value="DE">Deutschland</option>
+                        <option value="US">USA</option>
+                    </select>
+                </p>
+            </div>
         </fieldset>
         <fieldset>
             <h2>Persönliche Daten</h2>
+            <div class="fields">
+                <p class="row">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" class="field-medium">
+                </p>
+                <p class="row">
+                    <label for="scnd-name">Nachname:</label>
+                    <input type="text" id="scnd-name" name="scnd-name" class="field-medium">
+                </p>
+                <p class="row">
+                    <label for="profil-picture">Profilbild</label>
+                    <input type="file" id="profil-picture" name="profile-picture">
+                    <p class="instruction">
+                        Maxmiale Größe: 700KB, JPG/GIF/PNG.
+                    </p>
+                </p>
+                <fieldset class="radios">
+                    <legend>Geschlecht:</legend>
+                    <p class="row">
+                        <input type="radio" id="gender-male" name="gender">
+                        <label for="gender-male">Männlich</label>
+                    </p>
+                    <p class="row">
+                        <input type="radio" id="gender-female" name="gender">
+                        <label for="gender-female">Weiblich</label>
+                    </p>
+                </fieldset>
+            </div>
         </fieldset>
+        <fieldset>
+            <h2>AGB</h2>
+            <div class="fields checkboxes">
+                <p classs="row">
+                    <input type="checkbox" id="agb-checkbox" name="adb-checkbox" required>
+                    <label for="agb-checkbox">*Ich bin mit den AGB´s einverstanden</label>
+                </p>
+            </div>
+        </fieldset>
+        <input type="submit" value="Account erstellen">
     </form>
 </div>
 </body>
