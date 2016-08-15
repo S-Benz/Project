@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8"/>
     <title>HTML TEST PAGE</title>
+    <script src="build/jquery.js"></script>
+    <script src="build/mediaelement-and-player.min.js"></script>
+    <link rel="stylesheet" href="build/mediaelementplayer.min.css"/>
     <link rel="stylesheet" href="css/index.css"/>
 </head>
 <body>
@@ -49,10 +52,21 @@
                 <img src="sources/img/baum.jpg" alt="Ein Baum" class="resp-pic"/>
                 <figcaption>Ein Baum</figcaption>
             </figure>
-    <span>
-        LOADING
-        <progress value="0.4">Ladebalken</progress>
-    </span>
+            <span>
+                LOADING
+                <progress value="0.4">Ladebalken</progress>
+            </span>
+            <span>
+                <video controls poster="sources/img/sushi.jpg" preload="metadata">
+                    <source src="sources/vid/Family%20Guy%20Peter's%20sushi%20restaurant.mp4" type="video/mp4" media/>
+                </video>
+                <p>
+                <audio controls preload="metadata">
+                    <source src="sources/audio/AMV%20-%20Change%20my%20Life%20-%20Bestamvsofalltime%20Anime%20MV%20♫.mp3"
+                            type="audio/mp3"/>
+                </audio>
+                </p>
+            </span>
         </main>
         <div class="sidebar">
             <aside role="complementary">
@@ -66,5 +80,8 @@
         <sup>1</sup>Geschrieben von mir
     </footer>
 </div>
+<script>
+    $('audio,video').mediaelementplayer();
+</script>
 </body>
 </html>
